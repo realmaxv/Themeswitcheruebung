@@ -11,7 +11,7 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
   const [title, setTitle] = useState("light");
   const themeIncrement: React.MouseEventHandler = (e) => {
     e.preventDefault();
-    if (count < 3) {
+    if (count < 2) {
       setCount((old) => old + 1);
     } else {
       setCount(0);
